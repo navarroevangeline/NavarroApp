@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Birthday List</title>
+</head>
+<body bgcolor="pink">
+		<center><h1><font style="font-size: 150px;">Birthday List</h1></font></center>
+	<hr style="background-color: black">	
+<input readonly="true" id="name" style="background-color: transparent; border-color: transparent; font-size: 80px;padding-left: 15px;padding-top:50px;font-family: 'Times New Roman'" ><br>
+<input readonly="true" id="birthday" style="background-color: transparent; border-color: transparent;font-size: 80px;padding-left: 15px;padding-top: 10px; font-family: 'Times New Roman'"><br><br><br>
+<a href="form1.html"><button style="margin-left: 5%; background-color:lightblue; height: 50px; width: 150px; font-family: 'Papyrus'; font-weight: bold; font-size: 20px">Back to Main</button></a>
+
+</body>
+<script>
+	document.getElementById('name').value = window.localStorage.getItem('name');
+	document.getElementById('birthday').value = window.localStorage.getItem('birthday');
+
+</script>
+</html>

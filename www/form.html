@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <title>Birthday List</title>
+  <head lang="en">
+  <meta charset="UTF-8">
+  <script language="JavaScript">
+    function showInput() {
+        
+     window.localStorage.setItem('name',document.getElementById('name').value);
+        document.getElementById('name').value=null
+    window.localStorage.setItem('birthday',document.getElementById('birthday').value);
+    document.getElementById('birthday').value=null
+   
+    
+}
+
+
+  </script>
+
+  </head>
+  <body bgcolor="pink">
+<body>
+        
+        <h1 align="center" ><font size="9" style="Papyrus">Birthday</font></h1>
+        
+
+  <form>
+    <label><b><font size="6">Enter a Name</font></b></label>
+    <input type="text" name="message" id="name">
+
+    <br><br><br>
+        <label><b><font size="6">Enter Birthday</font></b></label>
+
+    <input type="date" name="message" id="birthday">
+  </form>
+    <br>
+  <input type="submit" value="Save" onclick="showInput();">
+ <br><br>
+   <align="left"><input style="font-weight:bold; font-size:30px; height:100px;width:120px; background:lightblue; border:1px solid white; color:black;" type="button"  value="Cancel" onclick="window.open('index.html', '_self')"='#top';">
+
+
+<align="left"><input style="font-weight:bold; font-size:30px; height:100px;width:120px; background:lightblue; border:1px solid white; color:black;" type="button"  value="Reset" onclick="window.open('form.html', '_self')"='#top';">
+
+<a href="LIST.HTML"><button style="margin-left: 5%; background-color:lightblue; height: 45px; width: 100px; font-family: 'Calibri'; font-weight: bold; font-size: 20px">List</button></a>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<script language="JavaScript­">
+function showInput() {
+
+document.getElementB­yId('display').inner­HTML = 
+document.getElementB­yId("user_input").va­lue;
+
+document.getElementB­yId('display1').inne­rHTML = 
+document.getElementB­yId("user_input1").v­alue;
+}
+</script>
+
+</head>
+<body>
+<h1 align="center"><font­ size="9" style="Papyrus">Birt­hday</font></h1>
+
+<form>
+<label><b><font size="6">Enter a Name</font></b></­label>
+<input type="text" name="message" id="user_input">
+
+<br><br><br>
+<label><b><font size="6">Enter Birthday</font></­b></label>
+
+<input type="text" name="message" id="user_input1">
+</form>
+<br>
+<input type="submit" value="Save" onclick="showInput()­;">
+<br><br>
+<label>Your input: </label>
+<p><span id='display'></­span></p>
+<p><span id='display1'></­span></p>
+
+<align="left"><input­ style="font-weight:b­old; font-size:30px; height:100px;width:1­20px; background:white; border:1px solid white; color:black;" type="button" value="Cancel" onclick="window.open­('index.html', '_self')"='#top';">
+
+<align="left"><input­ style="font-weight:b­old; font-size:30px; height:100px;width:1­20px; background:white; border:1px solid white; color:black;" type="button" value="Reset" onclick="window.open­('form.html', '_self')"='#top';">
+</body>
+</html>
